@@ -1,0 +1,9 @@
+
+
+--passo a passo para colocar projeto no git
+git init
+git add .
+git commit -m "Commit inicial"
+git branch -M main
+git remote add origin <URL-DO-SEU-REPOSITORIO>
+git push -u origin main
