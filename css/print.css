@@ -1,0 +1,491 @@
+/* ==========================================================
+   PRINT.CSS
+   Impressão otimizada para PDF (A4)
+========================================================== */
+
+@page {
+
+    size: A4 portrait;
+
+    margin: 12mm;
+
+}
+
+/* ==========================================================
+RESET PARA IMPRESSÃO
+========================================================== */
+
+@media print {
+
+    html,
+    body {
+
+        background: #ffffff !important;
+
+        color: #000000 !important;
+
+        width: 210mm;
+
+        min-height: 297mm;
+
+        font-family: "Inter", Arial, sans-serif;
+
+        font-size: 11pt;
+
+        line-height: 1.45;
+
+    }
+
+    * {
+
+        box-shadow: none !important;
+
+        text-shadow: none !important;
+
+        animation: none !important;
+
+        transition: none !important;
+
+    }
+
+    a {
+
+        color: #000000 !important;
+
+        text-decoration: none;
+
+    }
+
+}
+
+/* ==========================================================
+ESCONDER ELEMENTOS NÃO NECESSÁRIOS
+========================================================== */
+
+@media print {
+
+    header,
+
+    nav,
+
+    .hero-buttons,
+
+    footer,
+
+    .btn-primary,
+
+    .btn-secondary {
+
+        display: none !important;
+
+    }
+
+}
+
+/* ==========================================================
+CONTAINER
+========================================================== */
+
+@media print {
+
+    .container {
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+}
+
+/* ==========================================================
+HERO
+========================================================== */
+
+@media print {
+
+    .hero {
+
+        padding: 0;
+
+        margin: 0 0 20px 0;
+
+        background: white !important;
+
+        color: black !important;
+
+    }
+
+    .hero-grid {
+
+        display: block;
+
+    }
+
+    .hero-left {
+
+        width: 100%;
+
+    }
+
+    .hero-right {
+
+        display: none;
+
+    }
+
+    .hero h1 {
+
+        font-size: 24pt;
+
+        margin-bottom: 5px;
+
+    }
+
+    .hero h2 {
+
+        font-size: 14pt;
+
+        color: #444 !important;
+
+        margin-bottom: 15px;
+
+    }
+
+    .hero p {
+
+        font-size: 11pt;
+
+    }
+
+}
+
+/* ==========================================================
+SEÇÕES
+========================================================== */
+
+@media print {
+
+    section {
+
+        padding: 10px 0;
+
+        page-break-inside: avoid;
+
+    }
+
+    section h2 {
+
+        font-size: 16pt;
+
+        border-bottom: 2px solid #333;
+
+        padding-bottom: 5px;
+
+        margin-bottom: 12px;
+
+    }
+
+}
+
+/* ==========================================================
+TIMELINE
+========================================================== */
+
+@media print {
+
+    .timeline {
+
+        gap: 15px;
+
+    }
+
+    .timeline-item {
+
+        display: block;
+
+        margin-bottom: 15px;
+
+        page-break-inside: avoid;
+
+    }
+
+    .timeline-date {
+
+        font-weight: bold;
+
+        color: #000 !important;
+
+        margin-bottom: 6px;
+
+    }
+
+    .timeline-content {
+
+        border: 1px solid #ccc;
+
+        padding: 10px;
+
+        border-radius: 0;
+
+    }
+
+}
+
+/* ==========================================================
+TAGS
+========================================================== */
+
+@media print {
+
+    .tags {
+
+        margin-top: 8px;
+
+    }
+
+    .tags span {
+
+        background: #efefef !important;
+
+        color: #000 !important;
+
+        border: 1px solid #bbb;
+
+        font-size: 9pt;
+
+        padding: 3px 8px;
+
+    }
+
+}
+
+/* ==========================================================
+CARDS
+========================================================== */
+
+@media print {
+
+    .cards,
+
+    .certification-grid,
+
+    .language-grid,
+
+    .contact-grid {
+
+        display: block;
+
+    }
+
+    .card,
+
+    .cert-card,
+
+    .language,
+
+    .contact-card,
+
+    .education-card {
+
+        margin-bottom: 10px;
+
+        border: 1px solid #d9d9d9;
+
+        border-radius: 0;
+
+        padding: 10px;
+
+        background: white !important;
+
+        page-break-inside: avoid;
+
+    }
+
+}
+
+/* ==========================================================
+ICONES
+========================================================== */
+
+@media print {
+
+    i {
+
+        color: #000 !important;
+
+    }
+
+}
+
+/* ==========================================================
+SKILLS
+========================================================== */
+
+@media print {
+
+    .skill-cloud {
+
+        display: block;
+
+    }
+
+    .skill-cloud span {
+
+        display: inline-block;
+
+        margin: 3px;
+
+        background: #efefef !important;
+
+        color: black !important;
+
+        border: 1px solid #bbb;
+
+        padding: 4px 10px;
+
+        font-size: 9pt;
+
+    }
+
+}
+
+/* ==========================================================
+STATS
+========================================================== */
+
+@media print {
+
+    .stats {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        gap: 10px;
+
+        margin-top: 10px;
+
+    }
+
+    .stat {
+
+        flex: 1;
+
+        border: 1px solid #ccc;
+
+        border-radius: 0;
+
+        padding: 10px;
+
+    }
+
+    .stat h3 {
+
+        font-size: 18pt;
+
+    }
+
+}
+
+/* ==========================================================
+QUEBRAS DE PÁGINA
+========================================================== */
+
+@media print {
+
+    #experience {
+
+        page-break-before: always;
+
+    }
+
+    #projects {
+
+        page-break-before: always;
+
+    }
+
+    #certifications {
+
+        page-break-before: always;
+
+    }
+
+    #education {
+
+        page-break-before: always;
+
+    }
+
+}
+
+/* ==========================================================
+EVITAR QUEBRAS
+========================================================== */
+
+@media print {
+
+    h1,
+
+    h2,
+
+    h3,
+
+    h4,
+
+    p,
+
+    ul,
+
+    li,
+
+    .timeline-item,
+
+    .card,
+
+    .cert-card {
+
+        page-break-inside: avoid;
+
+    }
+
+}
+
+/* ==========================================================
+LINKS
+========================================================== */
+
+@media print {
+
+    a[href^="http"]::after {
+
+        content: " (" attr(href) ")";
+
+        font-size: 8pt;
+
+        color: #555;
+
+    }
+
+}
+
+/* ==========================================================
+ÚLTIMOS AJUSTES
+========================================================== */
+
+@media print {
+
+    body {
+
+        -webkit-print-color-adjust: exact;
+
+        print-color-adjust: exact;
+
+    }
+
+}
